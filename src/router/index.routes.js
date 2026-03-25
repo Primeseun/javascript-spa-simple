@@ -7,15 +7,15 @@ const router = async (route) => {
   console.log(route);
 
   switch (route) {
-    case "#/": {
-      return content.appendChild(pages.home());
-    }
-    case "#/posts": {
-      return content.appendChild(await pages.posts());
-    }
-    default: {
-      return content.appendChild(pages.notFound());
-    }
+  case "#/": {
+    return content.appendChild(pages.home());
+  }
+  case "#/posts": {
+    return content.appendChild(await pages.posts());
+  }
+  default: {
+    return content.appendChild(pages.notFound());
+  }
   }
 };
 
